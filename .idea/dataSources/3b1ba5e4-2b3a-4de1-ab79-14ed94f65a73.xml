@@ -1,0 +1,2122 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<dataSource name="test@localhost">
+  <database-model serializer="dbm" rdbms="MYSQL" format-version="4.2">
+    <root id="1"/>
+    <schema id="2" parent="1" name="test">
+      <Current>1</Current>
+      <Visible>1</Visible>
+    </schema>
+    <schema id="3" parent="1" name="activiti_1110"/>
+    <schema id="4" parent="1" name="activiti_1110_day2"/>
+    <schema id="5" parent="1" name="atguigu"/>
+    <schema id="6" parent="1" name="azkaban"/>
+    <schema id="7" parent="1" name="big_data"/>
+    <schema id="8" parent="1" name="hive"/>
+    <schema id="9" parent="1" name="information_schema"/>
+    <schema id="10" parent="1" name="mysql"/>
+    <schema id="11" parent="1" name="performance_schema"/>
+    <schema id="12" parent="1" name="test1"/>
+    <schema id="13" parent="1" name="tianzhi-clean"/>
+    <schema id="14" parent="1" name="tianzhi-light-prototype"/>
+    <schema id="15" parent="1" name="tianzhi-light-prototype-bak"/>
+    <schema id="16" parent="1" name="tianzhi-light-prototype1"/>
+    <schema id="17" parent="1" name="tianzhi-light-prototype1.bak"/>
+    <schema id="18" parent="1" name="tianzhi-light-prototype_8_13"/>
+    <schema id="19" parent="1" name="tianzhi_dev_activiti"/>
+    <schema id="20" parent="1" name="tianzhi_dev_activiti_8_29"/>
+    <schema id="21" parent="1" name="tianzhi_dev_activiti_8_29.bak"/>
+    <schema id="22" parent="1" name="urldb"/>
+    <schema id="23" parent="1" name="x5"/>
+    <schema id="24" parent="1" name="x5_2"/>
+    <schema id="25" parent="1" name="x5_8_20"/>
+    <schema id="26" parent="1" name="x5_9_7"/>
+    <table id="27" parent="2" name="act_ge_bytearray"/>
+    <table id="28" parent="2" name="act_ge_property"/>
+    <table id="29" parent="2" name="act_hi_actinst"/>
+    <table id="30" parent="2" name="act_hi_attachment"/>
+    <table id="31" parent="2" name="act_hi_comment"/>
+    <table id="32" parent="2" name="act_hi_detail"/>
+    <table id="33" parent="2" name="act_hi_procinst"/>
+    <table id="34" parent="2" name="act_hi_taskinst"/>
+    <table id="35" parent="2" name="act_re_deployment"/>
+    <table id="36" parent="2" name="act_re_procdef"/>
+    <table id="37" parent="2" name="act_ru_event_subscr"/>
+    <table id="38" parent="2" name="act_ru_execution"/>
+    <table id="39" parent="2" name="act_ru_identitylink"/>
+    <table id="40" parent="2" name="act_ru_job"/>
+    <table id="41" parent="2" name="act_ru_task"/>
+    <table id="42" parent="2" name="act_ru_variable"/>
+    <table id="43" parent="2" name="activemq_acks"/>
+    <table id="44" parent="2" name="activemq_lock"/>
+    <table id="45" parent="2" name="activemq_msgs"/>
+    <table id="46" parent="2" name="bpm_definition">
+      <Comment>流程定义扩展&#xd;
+Code:DEFTN</Comment>
+    </table>
+    <table id="47" parent="2" name="cloud_cache"/>
+    <table id="48" parent="2" name="cloud_process"/>
+    <table id="49" parent="2" name="cloud_saas_form"/>
+    <table id="50" parent="2" name="cloud_saas_res"/>
+    <table id="51" parent="2" name="cloud_saas_role"/>
+    <table id="52" parent="2" name="cloud_saas_role_res">
+      <Comment>角色资源映射</Comment>
+    </table>
+    <table id="53" parent="2" name="cloud_saas_user_role">
+      <Comment>用户角色映射表</Comment>
+    </table>
+    <table id="54" parent="2" name="cloud_saas_workflow"/>
+    <table id="55" parent="2" name="contractshowtest"/>
+    <table id="56" parent="2" name="dev_corp_extension">
+      <Comment>企业开发者身份认证信息</Comment>
+    </table>
+    <table id="57" parent="2" name="dev_dealt_tab"/>
+    <table id="58" parent="2" name="dev_indiv_extension">
+      <Comment>个人开发者身份认证信息</Comment>
+    </table>
+    <table id="59" parent="2" name="emp"/>
+    <table id="60" parent="2" name="emp_add"/>
+    <table id="61" parent="2" name="emp_conn"/>
+    <table id="62" parent="2" name="employee"/>
+    <table id="63" parent="2" name="location_info"/>
+    <table id="64" parent="2" name="menu"/>
+    <table id="65" parent="2" name="player"/>
+    <table id="66" parent="2" name="pls"/>
+    <table id="67" parent="2" name="result"/>
+    <column id="68" parent="27" name="ID_">
+      <Position>1</Position>
+      <DataType>varchar(64)|0</DataType>
+      <NotNull>1</NotNull>
+      <DefaultExpression>&apos;&apos;</DefaultExpression>
+    </column>
+    <column id="69" parent="27" name="REV_">
+      <Position>2</Position>
+      <DataType>int(11)|0</DataType>
+    </column>
+    <column id="70" parent="27" name="NAME_">
+      <Position>3</Position>
+      <DataType>varchar(255)|0</DataType>
+    </column>
+    <column id="71" parent="27" name="DEPLOYMENT_ID_">
+      <Position>4</Position>
+      <DataType>varchar(64)|0</DataType>
+    </column>
+    <column id="72" parent="27" name="BYTES_">
+      <Position>5</Position>
+      <DataType>longblob|0</DataType>
+    </column>
+    <column id="73" parent="27" name="GENERATED_">
+      <Position>6</Position>
+      <DataType>tinyint(4)|0</DataType>
+    </column>
+    <index id="74" parent="27" name="ACT_FK_BYTEARR_DEPL">
+      <ColNames>DEPLOYMENT_ID_</ColNames>
+    </index>
+    <key id="75" parent="27" name="PRIMARY">
+      <NameSurrogate>1</NameSurrogate>
+      <ColNames>ID_</ColNames>
+      <Primary>1</Primary>
+    </key>
+    <foreign-key id="76" parent="27" name="act_ge_bytearray_ibfk_1">
+      <ColNames>DEPLOYMENT_ID_</ColNames>
+      <RefSchemaName>test</RefSchemaName>
+      <RefTableName>act_re_deployment</RefTableName>
+      <RefColNames>ID_</RefColNames>
+    </foreign-key>
+    <column id="77" parent="28" name="NAME_">
+      <Position>1</Position>
+      <DataType>varchar(64)|0</DataType>
+      <NotNull>1</NotNull>
+      <DefaultExpression>&apos;&apos;</DefaultExpression>
+    </column>
+    <column id="78" parent="28" name="VALUE_">
+      <Position>2</Position>
+      <DataType>varchar(300)|0</DataType>
+    </column>
+    <column id="79" parent="28" name="REV_">
+      <Position>3</Position>
+      <DataType>int(11)|0</DataType>
+    </column>
+    <key id="80" parent="28" name="PRIMARY">
+      <NameSurrogate>1</NameSurrogate>
+      <ColNames>NAME_</ColNames>
+      <Primary>1</Primary>
+    </key>
+    <column id="81" parent="29" name="ID_">
+      <Position>1</Position>
+      <DataType>varchar(64)|0</DataType>
+      <NotNull>1</NotNull>
+    </column>
+    <column id="82" parent="29" name="PROC_DEF_ID_">
+      <Position>2</Position>
+      <DataType>varchar(64)|0</DataType>
+      <NotNull>1</NotNull>
+    </column>
+    <column id="83" parent="29" name="PROC_INST_ID_">
+      <Position>3</Position>
+      <DataType>varchar(64)|0</DataType>
+      <NotNull>1</NotNull>
+    </column>
+    <column id="84" parent="29" name="EXECUTION_ID_">
+      <Position>4</Position>
+      <DataType>varchar(64)|0</DataType>
+      <NotNull>1</NotNull>
+    </column>
+    <column id="85" parent="29" name="ACT_ID_">
+      <Position>5</Position>
+      <DataType>varchar(255)|0</DataType>
+      <NotNull>1</NotNull>
+    </column>
+    <column id="86" parent="29" name="ACT_NAME_">
+      <Position>6</Position>
+      <DataType>varchar(255)|0</DataType>
+    </column>
+    <column id="87" parent="29" name="ACT_TYPE_">
+      <Position>7</Position>
+      <DataType>varchar(255)|0</DataType>
+      <NotNull>1</NotNull>
+    </column>
+    <column id="88" parent="29" name="ASSIGNEE_">
+      <Position>8</Position>
+      <DataType>varchar(64)|0</DataType>
+    </column>
+    <column id="89" parent="29" name="START_TIME_">
+      <Position>9</Position>
+      <DataType>datetime|0</DataType>
+      <NotNull>1</NotNull>
+    </column>
+    <column id="90" parent="29" name="END_TIME_">
+      <Position>10</Position>
+      <DataType>datetime|0</DataType>
+    </column>
+    <column id="91" parent="29" name="DURATION_">
+      <Position>11</Position>
+      <DataType>bigint(20)|0</DataType>
+    </column>
+    <index id="92" parent="29" name="ACT_IDX_HI_ACT_INST_END">
+      <ColNames>END_TIME_</ColNames>
+    </index>
+    <index id="93" parent="29" name="ACT_IDX_HI_ACT_INST_START">
+      <ColNames>START_TIME_</ColNames>
+    </index>
+    <key id="94" parent="29" name="PRIMARY">
+      <NameSurrogate>1</NameSurrogate>
+      <ColNames>ID_</ColNames>
+      <Primary>1</Primary>
+    </key>
+    <column id="95" parent="30" name="ID_">
+      <Position>1</Position>
+      <DataType>varchar(64)|0</DataType>
+      <NotNull>1</NotNull>
+    </column>
+    <column id="96" parent="30" name="REV_">
+      <Position>2</Position>
+      <DataType>int(11)|0</DataType>
+    </column>
+    <column id="97" parent="30" name="USER_ID_">
+      <Position>3</Position>
+      <DataType>varchar(255)|0</DataType>
+    </column>
+    <column id="98" parent="30" name="NAME_">
+      <Position>4</Position>
+      <DataType>varchar(255)|0</DataType>
+    </column>
+    <column id="99" parent="30" name="DESCRIPTION_">
+      <Position>5</Position>
+      <DataType>varchar(4000)|0</DataType>
+    </column>
+    <column id="100" parent="30" name="TYPE_">
+      <Position>6</Position>
+      <DataType>varchar(255)|0</DataType>
+    </column>
+    <column id="101" parent="30" name="TASK_ID_">
+      <Position>7</Position>
+      <DataType>varchar(64)|0</DataType>
+    </column>
+    <column id="102" parent="30" name="PROC_INST_ID_">
+      <Position>8</Position>
+      <DataType>varchar(64)|0</DataType>
+    </column>
+    <column id="103" parent="30" name="URL_">
+      <Position>9</Position>
+      <DataType>varchar(4000)|0</DataType>
+    </column>
+    <column id="104" parent="30" name="CONTENT_ID_">
+      <Position>10</Position>
+      <DataType>varchar(64)|0</DataType>
+    </column>
+    <key id="105" parent="30" name="PRIMARY">
+      <NameSurrogate>1</NameSurrogate>
+      <ColNames>ID_</ColNames>
+      <Primary>1</Primary>
+    </key>
+    <column id="106" parent="31" name="ID_">
+      <Position>1</Position>
+      <DataType>varchar(64)|0</DataType>
+      <NotNull>1</NotNull>
+    </column>
+    <column id="107" parent="31" name="TYPE_">
+      <Position>2</Position>
+      <DataType>varchar(255)|0</DataType>
+    </column>
+    <column id="108" parent="31" name="TIME_">
+      <Position>3</Position>
+      <DataType>datetime|0</DataType>
+      <NotNull>1</NotNull>
+    </column>
+    <column id="109" parent="31" name="USER_ID_">
+      <Position>4</Position>
+      <DataType>varchar(255)|0</DataType>
+    </column>
+    <column id="110" parent="31" name="TASK_ID_">
+      <Position>5</Position>
+      <DataType>varchar(64)|0</DataType>
+    </column>
+    <column id="111" parent="31" name="PROC_INST_ID_">
+      <Position>6</Position>
+      <DataType>varchar(64)|0</DataType>
+    </column>
+    <column id="112" parent="31" name="ACTION_">
+      <Position>7</Position>
+      <DataType>varchar(255)|0</DataType>
+    </column>
+    <column id="113" parent="31" name="MESSAGE_">
+      <Position>8</Position>
+      <DataType>varchar(4000)|0</DataType>
+    </column>
+    <column id="114" parent="31" name="FULL_MSG_">
+      <Position>9</Position>
+      <DataType>longblob|0</DataType>
+    </column>
+    <key id="115" parent="31" name="PRIMARY">
+      <NameSurrogate>1</NameSurrogate>
+      <ColNames>ID_</ColNames>
+      <Primary>1</Primary>
+    </key>
+    <column id="116" parent="32" name="ID_">
+      <Position>1</Position>
+      <DataType>varchar(64)|0</DataType>
+      <NotNull>1</NotNull>
+    </column>
+    <column id="117" parent="32" name="TYPE_">
+      <Position>2</Position>
+      <DataType>varchar(255)|0</DataType>
+      <NotNull>1</NotNull>
+    </column>
+    <column id="118" parent="32" name="PROC_INST_ID_">
+      <Position>3</Position>
+      <DataType>varchar(64)|0</DataType>
+      <NotNull>1</NotNull>
+    </column>
+    <column id="119" parent="32" name="EXECUTION_ID_">
+      <Position>4</Position>
+      <DataType>varchar(64)|0</DataType>
+      <NotNull>1</NotNull>
+    </column>
+    <column id="120" parent="32" name="TASK_ID_">
+      <Position>5</Position>
+      <DataType>varchar(64)|0</DataType>
+    </column>
+    <column id="121" parent="32" name="ACT_INST_ID_">
+      <Position>6</Position>
+      <DataType>varchar(64)|0</DataType>
+    </column>
+    <column id="122" parent="32" name="NAME_">
+      <Position>7</Position>
+      <DataType>varchar(255)|0</DataType>
+      <NotNull>1</NotNull>
+    </column>
+    <column id="123" parent="32" name="VAR_TYPE_">
+      <Position>8</Position>
+      <DataType>varchar(255)|0</DataType>
+    </column>
+    <column id="124" parent="32" name="REV_">
+      <Position>9</Position>
+      <DataType>int(11)|0</DataType>
+    </column>
+    <column id="125" parent="32" name="TIME_">
+      <Position>10</Position>
+      <DataType>datetime|0</DataType>
+      <NotNull>1</NotNull>
+    </column>
+    <column id="126" parent="32" name="BYTEARRAY_ID_">
+      <Position>11</Position>
+      <DataType>varchar(64)|0</DataType>
+    </column>
+    <column id="127" parent="32" name="DOUBLE_">
+      <Position>12</Position>
+      <DataType>double|0</DataType>
+    </column>
+    <column id="128" parent="32" name="LONG_">
+      <Position>13</Position>
+      <DataType>bigint(20)|0</DataType>
+    </column>
+    <column id="129" parent="32" name="TEXT_">
+      <Position>14</Position>
+      <DataType>varchar(4000)|0</DataType>
+    </column>
+    <column id="130" parent="32" name="TEXT2_">
+      <Position>15</Position>
+      <DataType>varchar(4000)|0</DataType>
+    </column>
+    <index id="131" parent="32" name="ACT_IDX_HI_DETAIL_ACT_INST">
+      <ColNames>ACT_INST_ID_</ColNames>
+    </index>
+    <index id="132" parent="32" name="ACT_IDX_HI_DETAIL_NAME">
+      <ColNames>NAME_</ColNames>
+    </index>
+    <index id="133" parent="32" name="ACT_IDX_HI_DETAIL_PROC_INST">
+      <ColNames>PROC_INST_ID_</ColNames>
+    </index>
+    <index id="134" parent="32" name="ACT_IDX_HI_DETAIL_TASK_ID">
+      <ColNames>TASK_ID_</ColNames>
+    </index>
+    <index id="135" parent="32" name="ACT_IDX_HI_DETAIL_TIME">
+      <ColNames>TIME_</ColNames>
+    </index>
+    <key id="136" parent="32" name="PRIMARY">
+      <NameSurrogate>1</NameSurrogate>
+      <ColNames>ID_</ColNames>
+      <Primary>1</Primary>
+    </key>
+    <column id="137" parent="33" name="ID_">
+      <Position>1</Position>
+      <DataType>varchar(64)|0</DataType>
+      <NotNull>1</NotNull>
+    </column>
+    <column id="138" parent="33" name="PROC_INST_ID_">
+      <Position>2</Position>
+      <DataType>varchar(64)|0</DataType>
+      <NotNull>1</NotNull>
+    </column>
+    <column id="139" parent="33" name="BUSINESS_KEY_">
+      <Position>3</Position>
+      <DataType>varchar(255)|0</DataType>
+    </column>
+    <column id="140" parent="33" name="PROC_DEF_ID_">
+      <Position>4</Position>
+      <DataType>varchar(64)|0</DataType>
+      <NotNull>1</NotNull>
+    </column>
+    <column id="141" parent="33" name="START_TIME_">
+      <Position>5</Position>
+      <DataType>datetime|0</DataType>
+      <NotNull>1</NotNull>
+    </column>
+    <column id="142" parent="33" name="END_TIME_">
+      <Position>6</Position>
+      <DataType>datetime|0</DataType>
+    </column>
+    <column id="143" parent="33" name="DURATION_">
+      <Position>7</Position>
+      <DataType>bigint(20)|0</DataType>
+    </column>
+    <column id="144" parent="33" name="START_USER_ID_">
+      <Position>8</Position>
+      <DataType>varchar(255)|0</DataType>
+    </column>
+    <column id="145" parent="33" name="START_ACT_ID_">
+      <Position>9</Position>
+      <DataType>varchar(255)|0</DataType>
+    </column>
+    <column id="146" parent="33" name="END_ACT_ID_">
+      <Position>10</Position>
+      <DataType>varchar(255)|0</DataType>
+    </column>
+    <column id="147" parent="33" name="SUPER_PROCESS_INSTANCE_ID_">
+      <Position>11</Position>
+      <DataType>varchar(64)|0</DataType>
+    </column>
+    <column id="148" parent="33" name="DELETE_REASON_">
+      <Position>12</Position>
+      <DataType>varchar(4000)|0</DataType>
+    </column>
+    <index id="149" parent="33" name="ACT_IDX_HI_PRO_INST_END">
+      <ColNames>END_TIME_</ColNames>
+    </index>
+    <index id="150" parent="33" name="ACT_IDX_HI_PRO_I_BUSKEY">
+      <ColNames>BUSINESS_KEY_</ColNames>
+    </index>
+    <index id="151" parent="33" name="ACT_UNIQ_HI_BUS_KEY">
+      <ColNames>PROC_DEF_ID_
+BUSINESS_KEY_</ColNames>
+      <Unique>1</Unique>
+    </index>
+    <index id="152" parent="33" name="PROC_INST_ID_">
+      <ColNames>PROC_INST_ID_</ColNames>
+      <Unique>1</Unique>
+    </index>
+    <key id="153" parent="33" name="PRIMARY">
+      <NameSurrogate>1</NameSurrogate>
+      <ColNames>ID_</ColNames>
+      <Primary>1</Primary>
+    </key>
+    <key id="154" parent="33" name="PROC_INST_ID_">
+      <ColNames>PROC_INST_ID_</ColNames>
+      <UnderlyingIndexName>PROC_INST_ID_</UnderlyingIndexName>
+    </key>
+    <key id="155" parent="33" name="ACT_UNIQ_HI_BUS_KEY">
+      <ColNames>PROC_DEF_ID_
+BUSINESS_KEY_</ColNames>
+      <UnderlyingIndexName>ACT_UNIQ_HI_BUS_KEY</UnderlyingIndexName>
+    </key>
+    <column id="156" parent="34" name="ID_">
+      <Position>1</Position>
+      <DataType>varchar(64)|0</DataType>
+      <NotNull>1</NotNull>
+    </column>
+    <column id="157" parent="34" name="PROC_DEF_ID_">
+      <Position>2</Position>
+      <DataType>varchar(64)|0</DataType>
+    </column>
+    <column id="158" parent="34" name="TASK_DEF_KEY_">
+      <Position>3</Position>
+      <DataType>varchar(255)|0</DataType>
+    </column>
+    <column id="159" parent="34" name="PROC_INST_ID_">
+      <Position>4</Position>
+      <DataType>varchar(64)|0</DataType>
+    </column>
+    <column id="160" parent="34" name="EXECUTION_ID_">
+      <Position>5</Position>
+      <DataType>varchar(64)|0</DataType>
+    </column>
+    <column id="161" parent="34" name="NAME_">
+      <Position>6</Position>
+      <DataType>varchar(255)|0</DataType>
+    </column>
+    <column id="162" parent="34" name="PARENT_TASK_ID_">
+      <Position>7</Position>
+      <DataType>varchar(64)|0</DataType>
+    </column>
+    <column id="163" parent="34" name="DESCRIPTION_">
+      <Position>8</Position>
+      <DataType>varchar(4000)|0</DataType>
+    </column>
+    <column id="164" parent="34" name="OWNER_">
+      <Position>9</Position>
+      <DataType>varchar(64)|0</DataType>
+    </column>
+    <column id="165" parent="34" name="ASSIGNEE_">
+      <Position>10</Position>
+      <DataType>varchar(64)|0</DataType>
+    </column>
+    <column id="166" parent="34" name="START_TIME_">
+      <Position>11</Position>
+      <DataType>datetime|0</DataType>
+      <NotNull>1</NotNull>
+    </column>
+    <column id="167" parent="34" name="END_TIME_">
+      <Position>12</Position>
+      <DataType>datetime|0</DataType>
+    </column>
+    <column id="168" parent="34" name="DURATION_">
+      <Position>13</Position>
+      <DataType>bigint(20)|0</DataType>
+    </column>
+    <column id="169" parent="34" name="DELETE_REASON_">
+      <Position>14</Position>
+      <DataType>varchar(4000)|0</DataType>
+    </column>
+    <column id="170" parent="34" name="PRIORITY_">
+      <Position>15</Position>
+      <DataType>int(11)|0</DataType>
+    </column>
+    <column id="171" parent="34" name="DUE_DATE_">
+      <Position>16</Position>
+      <DataType>datetime|0</DataType>
+    </column>
+    <key id="172" parent="34" name="PRIMARY">
+      <NameSurrogate>1</NameSurrogate>
+      <ColNames>ID_</ColNames>
+      <Primary>1</Primary>
+    </key>
+    <column id="173" parent="35" name="ID_">
+      <Position>1</Position>
+      <DataType>varchar(64)|0</DataType>
+      <NotNull>1</NotNull>
+      <DefaultExpression>&apos;&apos;</DefaultExpression>
+    </column>
+    <column id="174" parent="35" name="NAME_">
+      <Position>2</Position>
+      <DataType>varchar(255)|0</DataType>
+    </column>
+    <column id="175" parent="35" name="DEPLOY_TIME_">
+      <Position>3</Position>
+      <DataType>timestamp|0</DataType>
+    </column>
+    <key id="176" parent="35" name="PRIMARY">
+      <NameSurrogate>1</NameSurrogate>
+      <ColNames>ID_</ColNames>
+      <Primary>1</Primary>
+    </key>
+    <column id="177" parent="36" name="ID_">
+      <Position>1</Position>
+      <DataType>varchar(64)|0</DataType>
+      <NotNull>1</NotNull>
+      <DefaultExpression>&apos;&apos;</DefaultExpression>
+    </column>
+    <column id="178" parent="36" name="REV_">
+      <Position>2</Position>
+      <DataType>int(11)|0</DataType>
+    </column>
+    <column id="179" parent="36" name="CATEGORY_">
+      <Position>3</Position>
+      <DataType>varchar(255)|0</DataType>
+    </column>
+    <column id="180" parent="36" name="NAME_">
+      <Position>4</Position>
+      <DataType>varchar(255)|0</DataType>
+    </column>
+    <column id="181" parent="36" name="KEY_">
+      <Position>5</Position>
+      <DataType>varchar(255)|0</DataType>
+    </column>
+    <column id="182" parent="36" name="VERSION_">
+      <Position>6</Position>
+      <DataType>int(11)|0</DataType>
+    </column>
+    <column id="183" parent="36" name="DEPLOYMENT_ID_">
+      <Position>7</Position>
+      <DataType>varchar(64)|0</DataType>
+    </column>
+    <column id="184" parent="36" name="RESOURCE_NAME_">
+      <Position>8</Position>
+      <DataType>varchar(4000)|0</DataType>
+    </column>
+    <column id="185" parent="36" name="DGRM_RESOURCE_NAME_">
+      <Position>9</Position>
+      <DataType>varchar(4000)|0</DataType>
+    </column>
+    <column id="186" parent="36" name="HAS_START_FORM_KEY_">
+      <Position>10</Position>
+      <DataType>tinyint(4)|0</DataType>
+    </column>
+    <column id="187" parent="36" name="SUSPENSION_STATE_">
+      <Position>11</Position>
+      <DataType>int(11)|0</DataType>
+    </column>
+    <index id="188" parent="36" name="ACT_UNIQ_PROCDEF">
+      <ColNames>KEY_
+VERSION_</ColNames>
+      <Unique>1</Unique>
+    </index>
+    <key id="189" parent="36" name="PRIMARY">
+      <NameSurrogate>1</NameSurrogate>
+      <ColNames>ID_</ColNames>
+      <Primary>1</Primary>
+    </key>
+    <key id="190" parent="36" name="ACT_UNIQ_PROCDEF">
+      <ColNames>KEY_
+VERSION_</ColNames>
+      <UnderlyingIndexName>ACT_UNIQ_PROCDEF</UnderlyingIndexName>
+    </key>
+    <column id="191" parent="37" name="ID_">
+      <Position>1</Position>
+      <DataType>varchar(64)|0</DataType>
+      <NotNull>1</NotNull>
+    </column>
+    <column id="192" parent="37" name="REV_">
+      <Position>2</Position>
+      <DataType>int(11)|0</DataType>
+    </column>
+    <column id="193" parent="37" name="EVENT_TYPE_">
+      <Position>3</Position>
+      <DataType>varchar(255)|0</DataType>
+      <NotNull>1</NotNull>
+    </column>
+    <column id="194" parent="37" name="EVENT_NAME_">
+      <Position>4</Position>
+      <DataType>varchar(255)|0</DataType>
+    </column>
+    <column id="195" parent="37" name="EXECUTION_ID_">
+      <Position>5</Position>
+      <DataType>varchar(64)|0</DataType>
+    </column>
+    <column id="196" parent="37" name="PROC_INST_ID_">
+      <Position>6</Position>
+      <DataType>varchar(64)|0</DataType>
+    </column>
+    <column id="197" parent="37" name="ACTIVITY_ID_">
+      <Position>7</Position>
+      <DataType>varchar(64)|0</DataType>
+    </column>
+    <column id="198" parent="37" name="CONFIGURATION_">
+      <Position>8</Position>
+      <DataType>varchar(255)|0</DataType>
+    </column>
+    <column id="199" parent="37" name="CREATED_">
+      <Position>9</Position>
+      <DataType>timestamp|0</DataType>
+      <NotNull>1</NotNull>
+      <DefaultExpression>CURRENT_TIMESTAMP</DefaultExpression>
+    </column>
+    <index id="200" parent="37" name="ACT_FK_EVENT_EXEC">
+      <ColNames>EXECUTION_ID_</ColNames>
+    </index>
+    <index id="201" parent="37" name="ACT_IDX_EVENT_SUBSCR_CONFIG_">
+      <ColNames>CONFIGURATION_</ColNames>
+    </index>
+    <key id="202" parent="37" name="PRIMARY">
+      <NameSurrogate>1</NameSurrogate>
+      <ColNames>ID_</ColNames>
+      <Primary>1</Primary>
+    </key>
+    <foreign-key id="203" parent="37" name="act_ru_event_subscr_ibfk_1">
+      <ColNames>EXECUTION_ID_</ColNames>
+      <RefSchemaName>test</RefSchemaName>
+      <RefTableName>act_ru_execution</RefTableName>
+      <RefColNames>ID_</RefColNames>
+    </foreign-key>
+    <column id="204" parent="38" name="ID_">
+      <Position>1</Position>
+      <DataType>varchar(64)|0</DataType>
+      <NotNull>1</NotNull>
+      <DefaultExpression>&apos;&apos;</DefaultExpression>
+    </column>
+    <column id="205" parent="38" name="REV_">
+      <Position>2</Position>
+      <DataType>int(11)|0</DataType>
+    </column>
+    <column id="206" parent="38" name="PROC_INST_ID_">
+      <Position>3</Position>
+      <DataType>varchar(64)|0</DataType>
+    </column>
+    <column id="207" parent="38" name="BUSINESS_KEY_">
+      <Position>4</Position>
+      <DataType>varchar(255)|0</DataType>
+    </column>
+    <column id="208" parent="38" name="PARENT_ID_">
+      <Position>5</Position>
+      <DataType>varchar(64)|0</DataType>
+    </column>
+    <column id="209" parent="38" name="PROC_DEF_ID_">
+      <Position>6</Position>
+      <DataType>varchar(64)|0</DataType>
+    </column>
+    <column id="210" parent="38" name="SUPER_EXEC_">
+      <Position>7</Position>
+      <DataType>varchar(64)|0</DataType>
+    </column>
+    <column id="211" parent="38" name="ACT_ID_">
+      <Position>8</Position>
+      <DataType>varchar(255)|0</DataType>
+    </column>
+    <column id="212" parent="38" name="IS_ACTIVE_">
+      <Position>9</Position>
+      <DataType>tinyint(4)|0</DataType>
+    </column>
+    <column id="213" parent="38" name="IS_CONCURRENT_">
+      <Position>10</Position>
+      <DataType>tinyint(4)|0</DataType>
+    </column>
+    <column id="214" parent="38" name="IS_SCOPE_">
+      <Position>11</Position>
+      <DataType>tinyint(4)|0</DataType>
+    </column>
+    <column id="215" parent="38" name="IS_EVENT_SCOPE_">
+      <Position>12</Position>
+      <DataType>tinyint(4)|0</DataType>
+    </column>
+    <column id="216" parent="38" name="SUSPENSION_STATE_">
+      <Position>13</Position>
+      <DataType>int(11)|0</DataType>
+    </column>
+    <column id="217" parent="38" name="CACHED_ENT_STATE_">
+      <Position>14</Position>
+      <DataType>int(11)|0</DataType>
+    </column>
+    <index id="218" parent="38" name="ACT_FK_EXE_PARENT">
+      <ColNames>PARENT_ID_</ColNames>
+    </index>
+    <index id="219" parent="38" name="ACT_FK_EXE_PROCINST">
+      <ColNames>PROC_INST_ID_</ColNames>
+    </index>
+    <index id="220" parent="38" name="ACT_FK_EXE_SUPER">
+      <ColNames>SUPER_EXEC_</ColNames>
+    </index>
+    <index id="221" parent="38" name="ACT_IDX_EXEC_BUSKEY">
+      <ColNames>BUSINESS_KEY_</ColNames>
+    </index>
+    <index id="222" parent="38" name="ACT_UNIQ_RU_BUS_KEY">
+      <ColNames>PROC_DEF_ID_
+BUSINESS_KEY_</ColNames>
+      <Unique>1</Unique>
+    </index>
+    <key id="223" parent="38" name="PRIMARY">
+      <NameSurrogate>1</NameSurrogate>
+      <ColNames>ID_</ColNames>
+      <Primary>1</Primary>
+    </key>
+    <key id="224" parent="38" name="ACT_UNIQ_RU_BUS_KEY">
+      <ColNames>PROC_DEF_ID_
+BUSINESS_KEY_</ColNames>
+      <UnderlyingIndexName>ACT_UNIQ_RU_BUS_KEY</UnderlyingIndexName>
+    </key>
+    <foreign-key id="225" parent="38" name="act_ru_execution_ibfk_2">
+      <ColNames>PROC_INST_ID_</ColNames>
+      <RefSchemaName>test</RefSchemaName>
+      <RefTableName>act_ru_execution</RefTableName>
+      <RefColNames>ID_</RefColNames>
+      <OnUpdate>cascade</OnUpdate>
+      <OnDelete>cascade</OnDelete>
+    </foreign-key>
+    <foreign-key id="226" parent="38" name="act_ru_execution_ibfk_1">
+      <ColNames>PARENT_ID_</ColNames>
+      <RefSchemaName>test</RefSchemaName>
+      <RefTableName>act_ru_execution</RefTableName>
+      <RefColNames>ID_</RefColNames>
+    </foreign-key>
+    <foreign-key id="227" parent="38" name="act_ru_execution_ibfk_3">
+      <ColNames>SUPER_EXEC_</ColNames>
+      <RefSchemaName>test</RefSchemaName>
+      <RefTableName>act_ru_execution</RefTableName>
+      <RefColNames>ID_</RefColNames>
+    </foreign-key>
+    <column id="228" parent="39" name="ID_">
+      <Position>1</Position>
+      <DataType>varchar(64)|0</DataType>
+      <NotNull>1</NotNull>
+      <DefaultExpression>&apos;&apos;</DefaultExpression>
+    </column>
+    <column id="229" parent="39" name="REV_">
+      <Position>2</Position>
+      <DataType>int(11)|0</DataType>
+    </column>
+    <column id="230" parent="39" name="GROUP_ID_">
+      <Position>3</Position>
+      <DataType>varchar(64)|0</DataType>
+    </column>
+    <column id="231" parent="39" name="TYPE_">
+      <Position>4</Position>
+      <DataType>varchar(255)|0</DataType>
+    </column>
+    <column id="232" parent="39" name="USER_ID_">
+      <Position>5</Position>
+      <DataType>varchar(64)|0</DataType>
+    </column>
+    <column id="233" parent="39" name="TASK_ID_">
+      <Position>6</Position>
+      <DataType>varchar(64)|0</DataType>
+    </column>
+    <column id="234" parent="39" name="PROC_DEF_ID_">
+      <Position>7</Position>
+      <DataType>varchar(64)|0</DataType>
+    </column>
+    <index id="235" parent="39" name="ACT_FK_TSKASS_TASK">
+      <ColNames>TASK_ID_</ColNames>
+    </index>
+    <index id="236" parent="39" name="ACT_IDX_ATHRZ_PROCEDEF">
+      <ColNames>PROC_DEF_ID_</ColNames>
+    </index>
+    <index id="237" parent="39" name="ACT_IDX_IDENT_LNK_GROUP">
+      <ColNames>GROUP_ID_</ColNames>
+    </index>
+    <index id="238" parent="39" name="ACT_IDX_IDENT_LNK_USER">
+      <ColNames>USER_ID_</ColNames>
+    </index>
+    <key id="239" parent="39" name="PRIMARY">
+      <NameSurrogate>1</NameSurrogate>
+      <ColNames>ID_</ColNames>
+      <Primary>1</Primary>
+    </key>
+    <foreign-key id="240" parent="39" name="act_ru_identitylink_ibfk_2">
+      <ColNames>TASK_ID_</ColNames>
+      <RefSchemaName>test</RefSchemaName>
+      <RefTableName>act_ru_task</RefTableName>
+      <RefColNames>ID_</RefColNames>
+    </foreign-key>
+    <foreign-key id="241" parent="39" name="act_ru_identitylink_ibfk_1">
+      <ColNames>PROC_DEF_ID_</ColNames>
+      <RefSchemaName>test</RefSchemaName>
+      <RefTableName>act_re_procdef</RefTableName>
+      <RefColNames>ID_</RefColNames>
+    </foreign-key>
+    <column id="242" parent="40" name="ID_">
+      <Position>1</Position>
+      <DataType>varchar(64)|0</DataType>
+      <NotNull>1</NotNull>
+    </column>
+    <column id="243" parent="40" name="REV_">
+      <Position>2</Position>
+      <DataType>int(11)|0</DataType>
+    </column>
+    <column id="244" parent="40" name="TYPE_">
+      <Position>3</Position>
+      <DataType>varchar(255)|0</DataType>
+      <NotNull>1</NotNull>
+    </column>
+    <column id="245" parent="40" name="LOCK_EXP_TIME_">
+      <Position>4</Position>
+      <DataType>timestamp|0</DataType>
+    </column>
+    <column id="246" parent="40" name="LOCK_OWNER_">
+      <Position>5</Position>
+      <DataType>varchar(255)|0</DataType>
+    </column>
+    <column id="247" parent="40" name="EXCLUSIVE_">
+      <Position>6</Position>
+      <DataType>tinyint(1)|0</DataType>
+    </column>
+    <column id="248" parent="40" name="EXECUTION_ID_">
+      <Position>7</Position>
+      <DataType>varchar(64)|0</DataType>
+    </column>
+    <column id="249" parent="40" name="PROCESS_INSTANCE_ID_">
+      <Position>8</Position>
+      <DataType>varchar(64)|0</DataType>
+    </column>
+    <column id="250" parent="40" name="RETRIES_">
+      <Position>9</Position>
+      <DataType>int(11)|0</DataType>
+    </column>
+    <column id="251" parent="40" name="EXCEPTION_STACK_ID_">
+      <Position>10</Position>
+      <DataType>varchar(64)|0</DataType>
+    </column>
+    <column id="252" parent="40" name="EXCEPTION_MSG_">
+      <Position>11</Position>
+      <DataType>varchar(4000)|0</DataType>
+    </column>
+    <column id="253" parent="40" name="DUEDATE_">
+      <Position>12</Position>
+      <DataType>timestamp|0</DataType>
+    </column>
+    <column id="254" parent="40" name="REPEAT_">
+      <Position>13</Position>
+      <DataType>varchar(255)|0</DataType>
+    </column>
+    <column id="255" parent="40" name="HANDLER_TYPE_">
+      <Position>14</Position>
+      <DataType>varchar(255)|0</DataType>
+    </column>
+    <column id="256" parent="40" name="HANDLER_CFG_">
+      <Position>15</Position>
+      <DataType>varchar(4000)|0</DataType>
+    </column>
+    <index id="257" parent="40" name="ACT_FK_JOB_EXCEPTION">
+      <ColNames>EXCEPTION_STACK_ID_</ColNames>
+    </index>
+    <key id="258" parent="40" name="PRIMARY">
+      <NameSurrogate>1</NameSurrogate>
+      <ColNames>ID_</ColNames>
+      <Primary>1</Primary>
+    </key>
+    <foreign-key id="259" parent="40" name="act_ru_job_ibfk_1">
+      <ColNames>EXCEPTION_STACK_ID_</ColNames>
+      <RefSchemaName>test</RefSchemaName>
+      <RefTableName>act_ge_bytearray</RefTableName>
+      <RefColNames>ID_</RefColNames>
+    </foreign-key>
+    <column id="260" parent="41" name="ID_">
+      <Position>1</Position>
+      <DataType>varchar(64)|0</DataType>
+      <NotNull>1</NotNull>
+      <DefaultExpression>&apos;&apos;</DefaultExpression>
+    </column>
+    <column id="261" parent="41" name="REV_">
+      <Position>2</Position>
+      <DataType>int(11)|0</DataType>
+    </column>
+    <column id="262" parent="41" name="EXECUTION_ID_">
+      <Position>3</Position>
+      <DataType>varchar(64)|0</DataType>
+    </column>
+    <column id="263" parent="41" name="PROC_INST_ID_">
+      <Position>4</Position>
+      <DataType>varchar(64)|0</DataType>
+    </column>
+    <column id="264" parent="41" name="PROC_DEF_ID_">
+      <Position>5</Position>
+      <DataType>varchar(64)|0</DataType>
+    </column>
+    <column id="265" parent="41" name="NAME_">
+      <Position>6</Position>
+      <DataType>varchar(255)|0</DataType>
+    </column>
+    <column id="266" parent="41" name="PARENT_TASK_ID_">
+      <Position>7</Position>
+      <DataType>varchar(64)|0</DataType>
+    </column>
+    <column id="267" parent="41" name="DESCRIPTION_">
+      <Position>8</Position>
+      <DataType>varchar(4000)|0</DataType>
+    </column>
+    <column id="268" parent="41" name="TASK_DEF_KEY_">
+      <Position>9</Position>
+      <DataType>varchar(255)|0</DataType>
+    </column>
+    <column id="269" parent="41" name="OWNER_">
+      <Position>10</Position>
+      <DataType>varchar(64)|0</DataType>
+    </column>
+    <column id="270" parent="41" name="ASSIGNEE_">
+      <Position>11</Position>
+      <DataType>varchar(64)|0</DataType>
+    </column>
+    <column id="271" parent="41" name="DELEGATION_">
+      <Position>12</Position>
+      <DataType>varchar(64)|0</DataType>
+    </column>
+    <column id="272" parent="41" name="PRIORITY_">
+      <Position>13</Position>
+      <DataType>int(11)|0</DataType>
+    </column>
+    <column id="273" parent="41" name="CREATE_TIME_">
+      <Position>14</Position>
+      <DataType>timestamp|0</DataType>
+    </column>
+    <column id="274" parent="41" name="DUE_DATE_">
+      <Position>15</Position>
+      <DataType>datetime|0</DataType>
+    </column>
+    <index id="275" parent="41" name="ACT_FK_TASK_EXE">
+      <ColNames>EXECUTION_ID_</ColNames>
+    </index>
+    <index id="276" parent="41" name="ACT_FK_TASK_PROCDEF">
+      <ColNames>PROC_DEF_ID_</ColNames>
+    </index>
+    <index id="277" parent="41" name="ACT_FK_TASK_PROCINST">
+      <ColNames>PROC_INST_ID_</ColNames>
+    </index>
+    <index id="278" parent="41" name="ACT_IDX_TASK_CREATE">
+      <ColNames>CREATE_TIME_</ColNames>
+    </index>
+    <key id="279" parent="41" name="PRIMARY">
+      <NameSurrogate>1</NameSurrogate>
+      <ColNames>ID_</ColNames>
+      <Primary>1</Primary>
+    </key>
+    <foreign-key id="280" parent="41" name="act_ru_task_ibfk_1">
+      <ColNames>EXECUTION_ID_</ColNames>
+      <RefSchemaName>test</RefSchemaName>
+      <RefTableName>act_ru_execution</RefTableName>
+      <RefColNames>ID_</RefColNames>
+    </foreign-key>
+    <foreign-key id="281" parent="41" name="act_ru_task_ibfk_3">
+      <ColNames>PROC_INST_ID_</ColNames>
+      <RefSchemaName>test</RefSchemaName>
+      <RefTableName>act_ru_execution</RefTableName>
+      <RefColNames>ID_</RefColNames>
+    </foreign-key>
+    <foreign-key id="282" parent="41" name="act_ru_task_ibfk_2">
+      <ColNames>PROC_DEF_ID_</ColNames>
+      <RefSchemaName>test</RefSchemaName>
+      <RefTableName>act_re_procdef</RefTableName>
+      <RefColNames>ID_</RefColNames>
+    </foreign-key>
+    <column id="283" parent="42" name="ID_">
+      <Position>1</Position>
+      <DataType>varchar(64)|0</DataType>
+      <NotNull>1</NotNull>
+    </column>
+    <column id="284" parent="42" name="REV_">
+      <Position>2</Position>
+      <DataType>int(11)|0</DataType>
+    </column>
+    <column id="285" parent="42" name="TYPE_">
+      <Position>3</Position>
+      <DataType>varchar(255)|0</DataType>
+      <NotNull>1</NotNull>
+    </column>
+    <column id="286" parent="42" name="NAME_">
+      <Position>4</Position>
+      <DataType>varchar(255)|0</DataType>
+      <NotNull>1</NotNull>
+    </column>
+    <column id="287" parent="42" name="EXECUTION_ID_">
+      <Position>5</Position>
+      <DataType>varchar(64)|0</DataType>
+    </column>
+    <column id="288" parent="42" name="PROC_INST_ID_">
+      <Position>6</Position>
+      <DataType>varchar(64)|0</DataType>
+    </column>
+    <column id="289" parent="42" name="TASK_ID_">
+      <Position>7</Position>
+      <DataType>varchar(64)|0</DataType>
+    </column>
+    <column id="290" parent="42" name="BYTEARRAY_ID_">
+      <Position>8</Position>
+      <DataType>varchar(64)|0</DataType>
+    </column>
+    <column id="291" parent="42" name="DOUBLE_">
+      <Position>9</Position>
+      <DataType>double|0</DataType>
+    </column>
+    <column id="292" parent="42" name="LONG_">
+      <Position>10</Position>
+      <DataType>bigint(20)|0</DataType>
+    </column>
+    <column id="293" parent="42" name="TEXT_">
+      <Position>11</Position>
+      <DataType>varchar(4000)|0</DataType>
+    </column>
+    <column id="294" parent="42" name="TEXT2_">
+      <Position>12</Position>
+      <DataType>varchar(4000)|0</DataType>
+    </column>
+    <index id="295" parent="42" name="ACT_FK_VAR_BYTEARRAY">
+      <ColNames>BYTEARRAY_ID_</ColNames>
+    </index>
+    <index id="296" parent="42" name="ACT_FK_VAR_EXE">
+      <ColNames>EXECUTION_ID_</ColNames>
+    </index>
+    <index id="297" parent="42" name="ACT_FK_VAR_PROCINST">
+      <ColNames>PROC_INST_ID_</ColNames>
+    </index>
+    <index id="298" parent="42" name="ACT_IDX_VARIABLE_TASK_ID">
+      <ColNames>TASK_ID_</ColNames>
+    </index>
+    <key id="299" parent="42" name="PRIMARY">
+      <NameSurrogate>1</NameSurrogate>
+      <ColNames>ID_</ColNames>
+      <Primary>1</Primary>
+    </key>
+    <foreign-key id="300" parent="42" name="act_ru_variable_ibfk_2">
+      <ColNames>EXECUTION_ID_</ColNames>
+      <RefSchemaName>test</RefSchemaName>
+      <RefTableName>act_ru_execution</RefTableName>
+      <RefColNames>ID_</RefColNames>
+    </foreign-key>
+    <foreign-key id="301" parent="42" name="act_ru_variable_ibfk_3">
+      <ColNames>PROC_INST_ID_</ColNames>
+      <RefSchemaName>test</RefSchemaName>
+      <RefTableName>act_ru_execution</RefTableName>
+      <RefColNames>ID_</RefColNames>
+    </foreign-key>
+    <foreign-key id="302" parent="42" name="act_ru_variable_ibfk_1">
+      <ColNames>BYTEARRAY_ID_</ColNames>
+      <RefSchemaName>test</RefSchemaName>
+      <RefTableName>act_ge_bytearray</RefTableName>
+      <RefColNames>ID_</RefColNames>
+    </foreign-key>
+    <column id="303" parent="43" name="CONTAINER">
+      <Position>1</Position>
+      <DataType>varchar(250)|0</DataType>
+      <NotNull>1</NotNull>
+    </column>
+    <column id="304" parent="43" name="SUB_DEST">
+      <Position>2</Position>
+      <DataType>varchar(250)|0</DataType>
+    </column>
+    <column id="305" parent="43" name="CLIENT_ID">
+      <Position>3</Position>
+      <DataType>varchar(250)|0</DataType>
+      <NotNull>1</NotNull>
+    </column>
+    <column id="306" parent="43" name="SUB_NAME">
+      <Position>4</Position>
+      <DataType>varchar(250)|0</DataType>
+      <NotNull>1</NotNull>
+    </column>
+    <column id="307" parent="43" name="SELECTOR">
+      <Position>5</Position>
+      <DataType>varchar(250)|0</DataType>
+    </column>
+    <column id="308" parent="43" name="LAST_ACKED_ID">
+      <Position>6</Position>
+      <DataType>bigint(20)|0</DataType>
+    </column>
+    <column id="309" parent="43" name="PRIORITY">
+      <Position>7</Position>
+      <DataType>bigint(20)|0</DataType>
+      <NotNull>1</NotNull>
+      <DefaultExpression>&apos;5&apos;</DefaultExpression>
+    </column>
+    <key id="310" parent="43" name="PRIMARY">
+      <NameSurrogate>1</NameSurrogate>
+      <ColNames>CONTAINER
+CLIENT_ID
+SUB_NAME
+PRIORITY</ColNames>
+      <Primary>1</Primary>
+    </key>
+    <column id="311" parent="44" name="ID">
+      <Position>1</Position>
+      <DataType>bigint(20)|0</DataType>
+      <NotNull>1</NotNull>
+    </column>
+    <column id="312" parent="44" name="TIME">
+      <Position>2</Position>
+      <DataType>bigint(20)|0</DataType>
+    </column>
+    <column id="313" parent="44" name="BROKER_NAME">
+      <Position>3</Position>
+      <DataType>varchar(250)|0</DataType>
+    </column>
+    <key id="314" parent="44" name="PRIMARY">
+      <NameSurrogate>1</NameSurrogate>
+      <ColNames>ID</ColNames>
+      <Primary>1</Primary>
+    </key>
+    <column id="315" parent="45" name="ID">
+      <Position>1</Position>
+      <DataType>bigint(20)|0</DataType>
+      <NotNull>1</NotNull>
+    </column>
+    <column id="316" parent="45" name="CONTAINER">
+      <Position>2</Position>
+      <DataType>varchar(250)|0</DataType>
+    </column>
+    <column id="317" parent="45" name="MSGID_PROD">
+      <Position>3</Position>
+      <DataType>varchar(250)|0</DataType>
+    </column>
+    <column id="318" parent="45" name="MSGID_SEQ">
+      <Position>4</Position>
+      <DataType>bigint(20)|0</DataType>
+    </column>
+    <column id="319" parent="45" name="EXPIRATION">
+      <Position>5</Position>
+      <DataType>bigint(20)|0</DataType>
+    </column>
+    <column id="320" parent="45" name="MSG">
+      <Position>6</Position>
+      <DataType>blob|0</DataType>
+    </column>
+    <column id="321" parent="45" name="PRIORITY">
+      <Position>7</Position>
+      <DataType>bigint(20)|0</DataType>
+    </column>
+    <index id="322" parent="45" name="ACTIVEMQ_MSGS_CIDX">
+      <ColNames>CONTAINER</ColNames>
+    </index>
+    <index id="323" parent="45" name="ACTIVEMQ_MSGS_EIDX">
+      <ColNames>EXPIRATION</ColNames>
+    </index>
+    <index id="324" parent="45" name="ACTIVEMQ_MSGS_MIDX">
+      <ColNames>MSGID_PROD
+MSGID_SEQ</ColNames>
+    </index>
+    <index id="325" parent="45" name="ACTIVEMQ_MSGS_PIDX">
+      <ColNames>PRIORITY</ColNames>
+    </index>
+    <key id="326" parent="45" name="PRIMARY">
+      <NameSurrogate>1</NameSurrogate>
+      <ColNames>ID</ColNames>
+      <Primary>1</Primary>
+    </key>
+    <column id="327" parent="46" name="defId">
+      <Position>1</Position>
+      <Comment>流程定义ID</Comment>
+      <DataType>bigint(20)|0</DataType>
+      <NotNull>1</NotNull>
+    </column>
+    <column id="328" parent="46" name="typeId">
+      <Position>2</Position>
+      <Comment>分类ID</Comment>
+      <DataType>bigint(20)|0</DataType>
+    </column>
+    <column id="329" parent="46" name="subject">
+      <Position>3</Position>
+      <Comment>流程标题</Comment>
+      <DataType>varchar(256)|0</DataType>
+      <NotNull>1</NotNull>
+    </column>
+    <column id="330" parent="46" name="defKey">
+      <Position>4</Position>
+      <Comment>流程定义Key&#xd;
+            流程定义Key，由设计人员加上，唯一</Comment>
+      <DataType>varchar(128)|0</DataType>
+      <NotNull>1</NotNull>
+    </column>
+    <column id="331" parent="46" name="taskNameRule">
+      <Position>5</Position>
+      <Comment>任务标题生成规则</Comment>
+      <DataType>varchar(512)|0</DataType>
+    </column>
+    <column id="332" parent="46" name="descp">
+      <Position>6</Position>
+      <Comment>流程描述</Comment>
+      <DataType>varchar(1024)|0</DataType>
+    </column>
+    <column id="333" parent="46" name="status">
+      <Position>7</Position>
+      <Comment>流程状态&#xd;
+            0=草稿&#xd;
+            1=发布&#xd;
+            2=挂起&#xd;
+            </Comment>
+      <DataType>smallint(6)|0</DataType>
+    </column>
+    <column id="334" parent="46" name="defXml">
+      <Position>8</Position>
+      <Comment>流程定义XML(设计器)</Comment>
+      <DataType>text|0</DataType>
+    </column>
+    <column id="335" parent="46" name="actDeployId">
+      <Position>9</Position>
+      <Comment>activiti流程定义ID</Comment>
+      <DataType>bigint(20)|0</DataType>
+    </column>
+    <column id="336" parent="46" name="actDefKey">
+      <Position>10</Position>
+      <Comment>act流程定义Key&#xd;
+            act流程定义Key，其生成的规则为流程定义Key+动态生成值，保证其唯一，当流程定义删除时，本表记录会删除，但actiiti的流程定义的数据则不删除，这样发布的流程会跟原来的流程定义的key可能会同样，因此，后续再加动态值，保证其值会activit的流程定义中key也唯一.</Comment>
+      <DataType>varchar(255)|0</DataType>
+    </column>
+    <column id="337" parent="46" name="actDefId">
+      <Position>11</Position>
+      <DataType>varchar(128)|0</DataType>
+    </column>
+    <column id="338" parent="46" name="createtime">
+      <Position>12</Position>
+      <Comment>创建时间</Comment>
+      <DataType>datetime|0</DataType>
+    </column>
+    <column id="339" parent="46" name="updatetime">
+      <Position>13</Position>
+      <DataType>datetime|0</DataType>
+    </column>
+    <column id="340" parent="46" name="createBy">
+      <Position>14</Position>
+      <DataType>bigint(20)|0</DataType>
+    </column>
+    <column id="341" parent="46" name="updateBy">
+      <Position>15</Position>
+      <DataType>bigint(20)|0</DataType>
+    </column>
+    <column id="342" parent="46" name="reason">
+      <Position>16</Position>
+      <DataType>varchar(512)|0</DataType>
+    </column>
+    <column id="343" parent="46" name="versionNo">
+      <Position>17</Position>
+      <DataType>int(11)|0</DataType>
+    </column>
+    <column id="344" parent="46" name="parentDefId">
+      <Position>18</Position>
+      <Comment>隶属主定义ID&#xd;
+            &#xd;
+            当基于旧版本流程上进行新版本发布时，则生成一份新的记录，并且该记录的该字段则隶属于原来记录的主键id</Comment>
+      <DataType>bigint(20)|0</DataType>
+    </column>
+    <column id="345" parent="46" name="isMain">
+      <Position>19</Position>
+      <Comment>是否为主版本&#xd;
+            1=主版本&#xd;
+            0=非主版本&#xd;
+            </Comment>
+      <DataType>smallint(6)|0</DataType>
+    </column>
+    <column id="346" parent="46" name="toFirstNode">
+      <Position>20</Position>
+      <Comment>跳转到第一个节点&#xd;
+            0,不跳转&#xd;
+            1,跳转</Comment>
+      <DataType>decimal(1)|0</DataType>
+    </column>
+    <column id="347" parent="46" name="needStartForm">
+      <Position>21</Position>
+      <Comment>需要启动表单&#xd;
+            1.需要,0.不需要</Comment>
+      <DataType>decimal(1)|0</DataType>
+    </column>
+    <column id="348" parent="46" name="showFirstAssignee">
+      <Position>22</Position>
+      <Comment>是否可以选择执行人</Comment>
+      <DataType>smallint(6)|0</DataType>
+    </column>
+    <column id="349" parent="46" name="startFirstNode">
+      <Position>23</Position>
+      <Comment>发起人节点</Comment>
+      <DataType>varchar(200)|0</DataType>
+    </column>
+    <column id="350" parent="46" name="canChoicePath">
+      <Position>24</Position>
+      <Comment>是否可以选择条件同步路径</Comment>
+      <DataType>varchar(500)|0</DataType>
+    </column>
+    <column id="351" parent="46" name="isUseOutForm">
+      <Position>25</Position>
+      <DataType>smallint(6)|0</DataType>
+    </column>
+    <column id="352" parent="46" name="formDetailUrl">
+      <Position>26</Position>
+      <DataType>varchar(256)|0</DataType>
+    </column>
+    <column id="353" parent="46" name="disableStatus">
+      <Position>27</Position>
+      <Comment>启用状态，0--启用（默认）1--禁用</Comment>
+      <DataType>int(11)|0</DataType>
+      <DefaultExpression>&apos;0&apos;</DefaultExpression>
+    </column>
+    <column id="354" parent="46" name="tenantId">
+      <Position>28</Position>
+      <DataType>bigint(20)|0</DataType>
+    </column>
+    <column id="355" parent="46" name="createBySystemId">
+      <Position>29</Position>
+      <DataType>bigint(20)|0</DataType>
+    </column>
+    <column id="356" parent="46" name="updateBySystemId">
+      <Position>30</Position>
+      <DataType>bigint(20)|0</DataType>
+    </column>
+    <index id="357" parent="46" name="FK_DEFN_R_GL_TYPE">
+      <ColNames>typeId</ColNames>
+    </index>
+    <key id="358" parent="46" name="PRIMARY">
+      <NameSurrogate>1</NameSurrogate>
+      <ColNames>defId</ColNames>
+      <Primary>1</Primary>
+    </key>
+    <column id="359" parent="47" name="id">
+      <Position>1</Position>
+      <DataType>bigint(20)|0</DataType>
+      <NotNull>1</NotNull>
+      <SequenceIdentity>1</SequenceIdentity>
+    </column>
+    <column id="360" parent="47" name="type">
+      <Position>2</Position>
+      <Comment>类型</Comment>
+      <DataType>varchar(50)|0</DataType>
+    </column>
+    <column id="361" parent="47" name="space">
+      <Position>3</Position>
+      <Comment>内存大小</Comment>
+      <DataType>varchar(50)|0</DataType>
+    </column>
+    <column id="362" parent="47" name="space_id">
+      <Position>4</Position>
+      <Comment>内存id</Comment>
+      <DataType>varchar(50)|0</DataType>
+    </column>
+    <column id="363" parent="47" name="port">
+      <Position>5</Position>
+      <Comment>端口</Comment>
+      <DataType>varchar(50)|0</DataType>
+    </column>
+    <column id="364" parent="47" name="uuid">
+      <Position>6</Position>
+      <Comment>唯一标识</Comment>
+      <DataType>varchar(100)|0</DataType>
+    </column>
+    <column id="365" parent="47" name="name">
+      <Position>7</Position>
+      <Comment>名称</Comment>
+      <DataType>varchar(50)|0</DataType>
+    </column>
+    <column id="366" parent="47" name="time">
+      <Position>8</Position>
+      <Comment>购买时长</Comment>
+      <DataType>varchar(50)|0</DataType>
+    </column>
+    <column id="367" parent="47" name="mun">
+      <Position>9</Position>
+      <Comment>个数</Comment>
+      <DataType>int(50)|0</DataType>
+    </column>
+    <column id="368" parent="47" name="description">
+      <Position>10</Position>
+      <Comment>详情</Comment>
+      <DataType>text|0</DataType>
+    </column>
+    <column id="369" parent="47" name="service_instance_guid">
+      <Position>11</Position>
+      <DataType>varchar(100)|0</DataType>
+    </column>
+    <column id="370" parent="47" name="create_by">
+      <Position>12</Position>
+      <Comment>创建人</Comment>
+      <DataType>bigint(20)|0</DataType>
+    </column>
+    <column id="371" parent="47" name="create_data">
+      <Position>13</Position>
+      <Comment>创建时间</Comment>
+      <DataType>datetime|0</DataType>
+    </column>
+    <column id="372" parent="47" name="update_by">
+      <Position>14</Position>
+      <Comment>修改人</Comment>
+      <DataType>bigint(20)|0</DataType>
+    </column>
+    <column id="373" parent="47" name="update_data">
+      <Position>15</Position>
+      <Comment>修改时间</Comment>
+      <DataType>datetime|0</DataType>
+    </column>
+    <key id="374" parent="47" name="PRIMARY">
+      <NameSurrogate>1</NameSurrogate>
+      <ColNames>id</ColNames>
+      <Primary>1</Primary>
+    </key>
+    <column id="375" parent="48" name="id">
+      <Position>1</Position>
+      <DataType>bigint(30)|0</DataType>
+      <NotNull>1</NotNull>
+      <SequenceIdentity>1</SequenceIdentity>
+    </column>
+    <column id="376" parent="48" name="user_id">
+      <Position>2</Position>
+      <Comment>用户</Comment>
+      <DataType>bigint(30)|0</DataType>
+    </column>
+    <column id="377" parent="48" name="org_id">
+      <Position>3</Position>
+      <Comment>企业id</Comment>
+      <DataType>bigint(30)|0</DataType>
+    </column>
+    <column id="378" parent="48" name="name">
+      <Position>4</Position>
+      <Comment>实例名称</Comment>
+      <DataType>varchar(50)|0</DataType>
+    </column>
+    <column id="379" parent="48" name="buy_time">
+      <Position>5</Position>
+      <Comment>购买时间</Comment>
+      <DataType>varchar(10)|0</DataType>
+    </column>
+    <column id="380" parent="48" name="description">
+      <Position>6</Position>
+      <Comment>描述</Comment>
+      <DataType>text|0</DataType>
+    </column>
+    <column id="381" parent="48" name="create_by">
+      <Position>7</Position>
+      <Comment>创建人</Comment>
+      <DataType>bigint(11)|0</DataType>
+    </column>
+    <column id="382" parent="48" name="create_date">
+      <Position>8</Position>
+      <Comment>创建时间</Comment>
+      <DataType>date|0</DataType>
+    </column>
+    <column id="383" parent="48" name="update_by">
+      <Position>9</Position>
+      <Comment>修改用户</Comment>
+      <DataType>bigint(11)|0</DataType>
+    </column>
+    <column id="384" parent="48" name="update_date">
+      <Position>10</Position>
+      <Comment>修改时间</Comment>
+      <DataType>date|0</DataType>
+    </column>
+    <key id="385" parent="48" name="PRIMARY">
+      <NameSurrogate>1</NameSurrogate>
+      <ColNames>id</ColNames>
+      <Primary>1</Primary>
+    </key>
+    <column id="386" parent="49" name="id">
+      <Position>1</Position>
+      <DataType>bigint(20)|0</DataType>
+      <NotNull>1</NotNull>
+    </column>
+    <column id="387" parent="49" name="companyId">
+      <Position>2</Position>
+      <Comment>公司Id</Comment>
+      <DataType>bigint(20)|0</DataType>
+    </column>
+    <column id="388" parent="49" name="srcUrl">
+      <Position>3</Position>
+      <Comment>源Url</Comment>
+      <DataType>varchar(200)|0</DataType>
+    </column>
+    <column id="389" parent="49" name="transferUrl">
+      <Position>4</Position>
+      <Comment>转化Url</Comment>
+      <DataType>varchar(200)|0</DataType>
+    </column>
+    <column id="390" parent="49" name="state">
+      <Position>5</Position>
+      <Comment>状态</Comment>
+      <DataType>varchar(20)|0</DataType>
+    </column>
+    <key id="391" parent="49" name="PRIMARY">
+      <NameSurrogate>1</NameSurrogate>
+      <ColNames>id</ColNames>
+      <Primary>1</Primary>
+    </key>
+    <column id="392" parent="50" name="saas_res_id">
+      <Position>1</Position>
+      <Comment>ID</Comment>
+      <DataType>bigint(32)|0</DataType>
+      <NotNull>1</NotNull>
+      <DefaultExpression>&apos;0&apos;</DefaultExpression>
+    </column>
+    <column id="393" parent="50" name="res_id">
+      <Position>2</Position>
+      <Comment>资源ID</Comment>
+      <DataType>bigint(20)|0</DataType>
+    </column>
+    <column id="394" parent="50" name="tenant_id">
+      <Position>3</Position>
+      <Comment>租户ID</Comment>
+      <DataType>bigint(20)|0</DataType>
+    </column>
+    <column id="395" parent="50" name="status">
+      <Position>4</Position>
+      <Comment>状态</Comment>
+      <DataType>varchar(255)|0</DataType>
+    </column>
+    <key id="396" parent="50" name="PRIMARY">
+      <NameSurrogate>1</NameSurrogate>
+      <ColNames>saas_res_id</ColNames>
+      <Primary>1</Primary>
+    </key>
+    <column id="397" parent="51" name="saas_role_id">
+      <Position>1</Position>
+      <Comment>ID</Comment>
+      <DataType>bigint(20)|0</DataType>
+      <NotNull>1</NotNull>
+      <DefaultExpression>&apos;0&apos;</DefaultExpression>
+    </column>
+    <column id="398" parent="51" name="role_id">
+      <Position>2</Position>
+      <Comment>角色ID</Comment>
+      <DataType>bigint(20)|0</DataType>
+    </column>
+    <column id="399" parent="51" name="role_name">
+      <Position>3</Position>
+      <Comment>角色名</Comment>
+      <DataType>varchar(128)|0</DataType>
+      <NotNull>1</NotNull>
+    </column>
+    <column id="400" parent="51" name="role_alias">
+      <Position>4</Position>
+      <Comment>角色别名</Comment>
+      <DataType>varchar(128)|0</DataType>
+    </column>
+    <column id="401" parent="51" name="role_type">
+      <Position>5</Position>
+      <Comment>角色类型：集团、经销商、服务商、采购商等</Comment>
+      <DataType>varchar(20)|0</DataType>
+    </column>
+    <column id="402" parent="51" name="memo">
+      <Position>6</Position>
+      <Comment>备注</Comment>
+      <DataType>varchar(256)|0</DataType>
+    </column>
+    <column id="403" parent="51" name="tenant_id">
+      <Position>7</Position>
+      <Comment>租户ID</Comment>
+      <DataType>bigint(20)|0</DataType>
+    </column>
+    <column id="404" parent="51" name="status">
+      <Position>8</Position>
+      <Comment>状态</Comment>
+      <DataType>varchar(255)|0</DataType>
+    </column>
+    <key id="405" parent="51" name="PRIMARY">
+      <NameSurrogate>1</NameSurrogate>
+      <ColNames>saas_role_id</ColNames>
+      <Primary>1</Primary>
+    </key>
+    <column id="406" parent="52" name="saasRoleResId">
+      <Position>1</Position>
+      <Comment>角色资源Id</Comment>
+      <DataType>bigint(32)|0</DataType>
+      <NotNull>1</NotNull>
+    </column>
+    <column id="407" parent="52" name="roleId">
+      <Position>2</Position>
+      <DataType>bigint(20)|0</DataType>
+    </column>
+    <column id="408" parent="52" name="resId">
+      <Position>3</Position>
+      <Comment>资源主键</Comment>
+      <DataType>bigint(20)|0</DataType>
+    </column>
+    <column id="409" parent="52" name="tenantId">
+      <Position>4</Position>
+      <Comment>租户ID</Comment>
+      <DataType>bigint(20)|0</DataType>
+    </column>
+    <index id="410" parent="52" name="IDX_ROLERES_RESID">
+      <ColNames>resId</ColNames>
+    </index>
+    <index id="411" parent="52" name="IDX_ROLERES_ROLEID">
+      <ColNames>roleId</ColNames>
+    </index>
+    <key id="412" parent="52" name="PRIMARY">
+      <NameSurrogate>1</NameSurrogate>
+      <ColNames>saasRoleResId</ColNames>
+      <Primary>1</Primary>
+    </key>
+    <column id="413" parent="53" name="SaasUserRoleId">
+      <Position>1</Position>
+      <Comment>用户角色Id</Comment>
+      <DataType>bigint(20)|0</DataType>
+      <NotNull>1</NotNull>
+    </column>
+    <column id="414" parent="53" name="roleId">
+      <Position>2</Position>
+      <Comment>角色ID</Comment>
+      <DataType>bigint(20)|0</DataType>
+    </column>
+    <column id="415" parent="53" name="userId">
+      <Position>3</Position>
+      <Comment>用户ID</Comment>
+      <DataType>bigint(20)|0</DataType>
+    </column>
+    <column id="416" parent="53" name="tenantId">
+      <Position>4</Position>
+      <Comment>租户Id</Comment>
+      <DataType>bigint(20)|0</DataType>
+    </column>
+    <index id="417" parent="53" name="FK_SYS_ROLE_R_USR_ROLE">
+      <ColNames>roleId</ColNames>
+    </index>
+    <index id="418" parent="53" name="FK_USER_ROLE_R_SYS_USER">
+      <ColNames>userId</ColNames>
+    </index>
+    <key id="419" parent="53" name="PRIMARY">
+      <NameSurrogate>1</NameSurrogate>
+      <ColNames>SaasUserRoleId</ColNames>
+      <Primary>1</Primary>
+    </key>
+    <foreign-key id="420" parent="53" name="cloud_saas_user_role_ibfk_1">
+      <ColNames>userId</ColNames>
+      <RefSchemaName>test</RefSchemaName>
+      <RefTableName>sys_user</RefTableName>
+      <RefColNames>userId</RefColNames>
+      <OnDelete>cascade</OnDelete>
+    </foreign-key>
+    <column id="421" parent="54" name="id">
+      <Position>1</Position>
+      <DataType>bigint(20)|0</DataType>
+      <NotNull>1</NotNull>
+    </column>
+    <column id="422" parent="54" name="entid">
+      <Position>2</Position>
+      <DataType>bigint(20)|0</DataType>
+    </column>
+    <column id="423" parent="54" name="entname">
+      <Position>3</Position>
+      <DataType>varchar(200)|0</DataType>
+    </column>
+    <column id="424" parent="54" name="flowtype">
+      <Position>4</Position>
+      <DataType>varchar(20)|0</DataType>
+    </column>
+    <column id="425" parent="54" name="flowkey">
+      <Position>5</Position>
+      <DataType>varchar(200)|0</DataType>
+    </column>
+    <column id="426" parent="54" name="flowname">
+      <Position>6</Position>
+      <DataType>varchar(200)|0</DataType>
+    </column>
+    <column id="427" parent="54" name="remake">
+      <Position>7</Position>
+      <DataType>varchar(200)|0</DataType>
+    </column>
+    <key id="428" parent="54" name="PRIMARY">
+      <NameSurrogate>1</NameSurrogate>
+      <ColNames>id</ColNames>
+      <Primary>1</Primary>
+    </key>
+    <column id="429" parent="55" name="id">
+      <Position>1</Position>
+      <DataType>bigint(20)|0</DataType>
+      <NotNull>1</NotNull>
+    </column>
+    <column id="430" parent="55" name="code">
+      <Position>2</Position>
+      <DataType>varchar(64)|0</DataType>
+    </column>
+    <column id="431" parent="55" name="name">
+      <Position>3</Position>
+      <DataType>varchar(64)|0</DataType>
+    </column>
+    <column id="432" parent="55" name="money">
+      <Position>4</Position>
+      <DataType>double|0</DataType>
+    </column>
+    <key id="433" parent="55" name="PRIMARY">
+      <NameSurrogate>1</NameSurrogate>
+      <ColNames>id</ColNames>
+      <Primary>1</Primary>
+    </key>
+    <column id="434" parent="56" name="id">
+      <Position>1</Position>
+      <Comment>内码 自增主键</Comment>
+      <DataType>bigint(10) unsigned|0</DataType>
+      <NotNull>1</NotNull>
+      <SequenceIdentity>1</SequenceIdentity>
+    </column>
+    <column id="435" parent="56" name="dev_id">
+      <Position>2</Position>
+      <Comment>关联dev_info表的id</Comment>
+      <DataType>bigint(10)|0</DataType>
+    </column>
+    <column id="436" parent="56" name="org_id">
+      <Position>3</Position>
+      <Comment>航天云网企业组织机构id</Comment>
+      <DataType>bigint(10)|0</DataType>
+    </column>
+    <column id="437" parent="56" name="org_name">
+      <Position>4</Position>
+      <Comment>航天云网组织机构名称</Comment>
+      <DataType>varchar(255)|0</DataType>
+    </column>
+    <column id="438" parent="56" name="corp_name">
+      <Position>5</Position>
+      <Comment>企业全称</Comment>
+      <DataType>varchar(255)|0</DataType>
+    </column>
+    <column id="439" parent="56" name="offical_web_site">
+      <Position>6</Position>
+      <Comment>官方网站</Comment>
+      <DataType>varchar(255)|0</DataType>
+    </column>
+    <column id="440" parent="56" name="bus_lic_code">
+      <Position>7</Position>
+      <Comment>营业执照</Comment>
+      <DataType>varchar(50)|0</DataType>
+    </column>
+    <column id="441" parent="56" name="bus_lic_url">
+      <Position>8</Position>
+      <Comment>营业执照照片</Comment>
+      <DataType>varchar(255)|0</DataType>
+    </column>
+    <column id="442" parent="56" name="atten_name">
+      <Position>9</Position>
+      <Comment>企业联系人名称</Comment>
+      <DataType>varchar(50)|0</DataType>
+    </column>
+    <column id="443" parent="56" name="mobile">
+      <Position>10</Position>
+      <Comment>企业电话</Comment>
+      <DataType>varchar(20)|0</DataType>
+    </column>
+    <column id="444" parent="56" name="mail">
+      <Position>11</Position>
+      <Comment>企业邮箱地址</Comment>
+      <DataType>varchar(50)|0</DataType>
+    </column>
+    <column id="445" parent="56" name="introd">
+      <Position>12</Position>
+      <Comment>公司简介</Comment>
+      <DataType>varchar(2000)|0</DataType>
+    </column>
+    <column id="446" parent="56" name="address">
+      <Position>13</Position>
+      <Comment>公司地址</Comment>
+      <DataType>varchar(255)|0</DataType>
+    </column>
+    <key id="447" parent="56" name="PRIMARY">
+      <NameSurrogate>1</NameSurrogate>
+      <ColNames>id</ColNames>
+      <Primary>1</Primary>
+    </key>
+    <column id="448" parent="57" name="id">
+      <Position>1</Position>
+      <DataType>int(11)|0</DataType>
+      <NotNull>1</NotNull>
+      <SequenceIdentity>1</SequenceIdentity>
+    </column>
+    <column id="449" parent="57" name="coreId">
+      <Position>2</Position>
+      <DataType>bigint(20)|0</DataType>
+    </column>
+    <column id="450" parent="57" name="tabName">
+      <Position>3</Position>
+      <Comment>数据表名称</Comment>
+      <DataType>varchar(255)|0</DataType>
+    </column>
+    <column id="451" parent="57" name="pointercol">
+      <Position>4</Position>
+      <Comment>作为标记的字段名</Comment>
+      <DataType>varchar(255)|0</DataType>
+    </column>
+    <column id="452" parent="57" name="lastpointer">
+      <Position>5</Position>
+      <DataType>varchar(255)|0</DataType>
+    </column>
+    <column id="453" parent="57" name="selectvalue">
+      <Position>6</Position>
+      <DataType>varchar(255)|0</DataType>
+    </column>
+    <key id="454" parent="57" name="PRIMARY">
+      <NameSurrogate>1</NameSurrogate>
+      <ColNames>id</ColNames>
+      <Primary>1</Primary>
+    </key>
+    <column id="455" parent="58" name="id">
+      <Position>1</Position>
+      <Comment>内码 自增主键</Comment>
+      <DataType>bigint(10) unsigned|0</DataType>
+      <NotNull>1</NotNull>
+      <SequenceIdentity>1</SequenceIdentity>
+    </column>
+    <column id="456" parent="58" name="dev_id">
+      <Position>2</Position>
+      <Comment>关联dev_info表的id&apos;</Comment>
+      <DataType>bigint(10)|0</DataType>
+    </column>
+    <column id="457" parent="58" name="real_name">
+      <Position>3</Position>
+      <Comment>开发者真实姓名</Comment>
+      <DataType>varchar(50)|0</DataType>
+    </column>
+    <column id="458" parent="58" name="corp_name">
+      <Position>4</Position>
+      <Comment>所属企业或者学校名称</Comment>
+      <DataType>varchar(255)|0</DataType>
+    </column>
+    <column id="459" parent="58" name="id_type">
+      <Position>5</Position>
+      <Comment>证件类型（1身份证 2驾驶证）</Comment>
+      <DataType>int(1)|0</DataType>
+    </column>
+    <column id="460" parent="58" name="id_card">
+      <Position>6</Position>
+      <Comment>证件号码</Comment>
+      <DataType>varchar(18)|0</DataType>
+    </column>
+    <column id="461" parent="58" name="id_front_url">
+      <Position>7</Position>
+      <Comment>证件正面照</Comment>
+      <DataType>varchar(255)|0</DataType>
+    </column>
+    <column id="462" parent="58" name="id_back_url">
+      <Position>8</Position>
+      <Comment>证件背面照</Comment>
+      <DataType>varchar(255)|0</DataType>
+    </column>
+    <column id="463" parent="58" name="is_foregin">
+      <Position>9</Position>
+      <Comment>是否外籍（0否 1是）</Comment>
+      <DataType>int(1)|0</DataType>
+      <DefaultExpression>&apos;0&apos;</DefaultExpression>
+    </column>
+    <column id="464" parent="58" name="mobile">
+      <Position>10</Position>
+      <Comment>手机号码</Comment>
+      <DataType>varchar(20)|0</DataType>
+    </column>
+    <column id="465" parent="58" name="mail">
+      <Position>11</Position>
+      <Comment>个人邮箱地址</Comment>
+      <DataType>varchar(255)|0</DataType>
+    </column>
+    <column id="466" parent="58" name="qq">
+      <Position>12</Position>
+      <Comment>qq号</Comment>
+      <DataType>varchar(255)|0</DataType>
+    </column>
+    <column id="467" parent="58" name="indiv_web_site">
+      <Position>13</Position>
+      <Comment>个人主页</Comment>
+      <DataType>varchar(255)|0</DataType>
+    </column>
+    <column id="468" parent="58" name="introd">
+      <Position>14</Position>
+      <Comment>个人简介</Comment>
+      <DataType>varchar(255)|0</DataType>
+    </column>
+    <column id="469" parent="58" name="address">
+      <Position>15</Position>
+      <Comment>住址</Comment>
+      <DataType>varchar(255)|0</DataType>
+    </column>
+    <key id="470" parent="58" name="PRIMARY">
+      <NameSurrogate>1</NameSurrogate>
+      <ColNames>id</ColNames>
+      <Primary>1</Primary>
+    </key>
+    <column id="471" parent="59" name="id">
+      <Position>1</Position>
+      <DataType>int(11)|0</DataType>
+    </column>
+    <column id="472" parent="59" name="name">
+      <Position>2</Position>
+      <DataType>varchar(255)|0</DataType>
+    </column>
+    <column id="473" parent="59" name="deg">
+      <Position>3</Position>
+      <DataType>varchar(255)|0</DataType>
+    </column>
+    <column id="474" parent="59" name="salary">
+      <Position>4</Position>
+      <DataType>varchar(10)|0</DataType>
+    </column>
+    <column id="475" parent="59" name="dept">
+      <Position>5</Position>
+      <DataType>varchar(255)|0</DataType>
+    </column>
+    <column id="476" parent="60" name="id">
+      <Position>1</Position>
+      <DataType>int(11)|0</DataType>
+    </column>
+    <column id="477" parent="60" name="hno">
+      <Position>2</Position>
+      <DataType>varchar(255)|0</DataType>
+    </column>
+    <column id="478" parent="60" name="street">
+      <Position>3</Position>
+      <DataType>varchar(255)|0</DataType>
+    </column>
+    <column id="479" parent="60" name="city">
+      <Position>4</Position>
+      <DataType>varchar(255)|0</DataType>
+    </column>
+    <column id="480" parent="61" name="id">
+      <Position>1</Position>
+      <DataType>int(11)|0</DataType>
+    </column>
+    <column id="481" parent="61" name="phno">
+      <Position>2</Position>
+      <DataType>varchar(255)|0</DataType>
+    </column>
+    <column id="482" parent="61" name="email">
+      <Position>3</Position>
+      <DataType>varchar(255)|0</DataType>
+    </column>
+    <column id="483" parent="62" name="id">
+      <Position>1</Position>
+      <DataType>int(11)|0</DataType>
+      <NotNull>1</NotNull>
+    </column>
+    <column id="484" parent="62" name="name">
+      <Position>2</Position>
+      <DataType>varchar(20)|0</DataType>
+    </column>
+    <column id="485" parent="62" name="deg">
+      <Position>3</Position>
+      <DataType>varchar(20)|0</DataType>
+    </column>
+    <column id="486" parent="62" name="salary">
+      <Position>4</Position>
+      <DataType>int(11)|0</DataType>
+    </column>
+    <column id="487" parent="62" name="dept">
+      <Position>5</Position>
+      <DataType>varchar(10)|0</DataType>
+    </column>
+    <key id="488" parent="62" name="PRIMARY">
+      <NameSurrogate>1</NameSurrogate>
+      <ColNames>id</ColNames>
+      <Primary>1</Primary>
+    </key>
+    <column id="489" parent="63" name="id">
+      <Position>1</Position>
+      <DataType>bigint(20)|0</DataType>
+      <NotNull>1</NotNull>
+      <SequenceIdentity>1</SequenceIdentity>
+    </column>
+    <column id="490" parent="63" name="log_date">
+      <Position>2</Position>
+      <DataType>date|0</DataType>
+    </column>
+    <column id="491" parent="63" name="location">
+      <Position>3</Position>
+      <DataType>varchar(10)|0</DataType>
+      <NotNull>1</NotNull>
+    </column>
+    <column id="492" parent="63" name="total_count">
+      <Position>4</Position>
+      <DataType>int(11)|0</DataType>
+      <NotNull>1</NotNull>
+    </column>
+    <key id="493" parent="63" name="PRIMARY">
+      <NameSurrogate>1</NameSurrogate>
+      <ColNames>id</ColNames>
+      <Primary>1</Primary>
+    </key>
+    <column id="494" parent="64" name="id">
+      <Position>1</Position>
+      <DataType>bigint(20)|0</DataType>
+      <NotNull>1</NotNull>
+      <SequenceIdentity>1</SequenceIdentity>
+    </column>
+    <column id="495" parent="64" name="name">
+      <Position>2</Position>
+      <DataType>varchar(255)|0</DataType>
+      <NotNull>1</NotNull>
+    </column>
+    <column id="496" parent="64" name="action">
+      <Position>3</Position>
+      <DataType>varchar(255)|0</DataType>
+    </column>
+    <column id="497" parent="64" name="style">
+      <Position>4</Position>
+      <DataType>varchar(255)|0</DataType>
+      <NotNull>1</NotNull>
+    </column>
+    <column id="498" parent="64" name="description">
+      <Position>5</Position>
+      <DataType>varchar(255)|0</DataType>
+    </column>
+    <column id="499" parent="64" name="parent_id">
+      <Position>6</Position>
+      <DataType>bigint(20)|0</DataType>
+    </column>
+    <column id="500" parent="64" name="deleted">
+      <Position>7</Position>
+      <DataType>tinyint(1)|0</DataType>
+    </column>
+    <index id="501" parent="64" name="PK_MENU_PID">
+      <ColNames>parent_id</ColNames>
+    </index>
+    <key id="502" parent="64" name="PRIMARY">
+      <NameSurrogate>1</NameSurrogate>
+      <ColNames>id</ColNames>
+      <Primary>1</Primary>
+    </key>
+    <foreign-key id="503" parent="64" name="PK_MENU_PID">
+      <ColNames>parent_id</ColNames>
+      <RefSchemaName>test</RefSchemaName>
+      <RefTableName>menu</RefTableName>
+      <RefColNames>id</RefColNames>
+    </foreign-key>
+    <column id="504" parent="65" name="playerId">
+      <Position>1</Position>
+      <DataType>bigint(20)|0</DataType>
+      <NotNull>1</NotNull>
+      <SequenceIdentity>1</SequenceIdentity>
+    </column>
+    <column id="505" parent="65" name="exp">
+      <Position>2</Position>
+      <DataType>int(11)|0</DataType>
+      <NotNull>1</NotNull>
+    </column>
+    <column id="506" parent="65" name="level">
+      <Position>3</Position>
+      <DataType>int(11)|0</DataType>
+      <NotNull>1</NotNull>
+    </column>
+    <column id="507" parent="65" name="passward">
+      <Position>4</Position>
+      <DataType>varchar(255)|0</DataType>
+    </column>
+    <column id="508" parent="65" name="playerName">
+      <Position>5</Position>
+      <DataType>varchar(255)|0</DataType>
+    </column>
+    <key id="509" parent="65" name="PRIMARY">
+      <NameSurrogate>1</NameSurrogate>
+      <ColNames>playerId</ColNames>
+      <Primary>1</Primary>
+    </key>
+    <column id="510" parent="66" name="id">
+      <Position>1</Position>
+      <DataType>int(11)|0</DataType>
+    </column>
+    <column id="511" parent="66" name="xb">
+      <Position>2</Position>
+      <DataType>varchar(255)|0</DataType>
+    </column>
+    <column id="512" parent="66" name="age">
+      <Position>3</Position>
+      <DataType>int(11)|0</DataType>
+    </column>
+    <column id="513" parent="66" name="hobby">
+      <Position>4</Position>
+      <DataType>varchar(255)|0</DataType>
+    </column>
+    <column id="514" parent="67" name="id">
+      <Position>1</Position>
+      <DataType>int(11)|0</DataType>
+    </column>
+    <column id="515" parent="67" name="location">
+      <Position>2</Position>
+      <DataType>varchar(255)|0</DataType>
+    </column>
+    <column id="516" parent="67" name="counts">
+      <Position>3</Position>
+      <DataType>bigint(20)|0</DataType>
+    </column>
+  </database-model>
+</dataSource>
